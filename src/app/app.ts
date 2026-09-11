@@ -7,5 +7,17 @@ import { Component, signal } from '@angular/core';
   templateUrl: './app.html',
 })
 export class App {
-  protected readonly title = signal('introAngular');
+
+ title:string = 'Edgar Isair Valdivia López'
+
+  duplicarnumero(a:number):number{
+    return a*2
+  }
+
+pelicula={
+  titulo: 'Spider-man',
+  fechaLanzamiento: new Date(),
+  precio: 2353
+}
+
 }
