@@ -2,10 +2,13 @@ import { Component, signal } from '@angular/core';
 
 @Component({
   selector: 'app-root',
+templateUrl:'/app.html'
+,
   standalone: false,
   styleUrl: './app.css',
-  templateUrl: './app.html',
+  
 })
+
 export class App {
 
  title:string = 'Edgar Isair Valdivia López'
