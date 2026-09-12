@@ -1,0 +1,27 @@
+<div class="col-6">
+    <div class="mb-3">
+        <label>X1</label>
+        <input type="text" [(ngModel)]="x1" class="form-control">
+    </div>
+
+    <div class="mb-3">
+        <label>Y1</label>
+        <input type="text" [(ngModel)]="y1" class="form-control">
+    </div>
+
+    <div class="mb-3">
+        <label>X2</label>
+        <input type="text" [(ngModel)]="x2" class="form-control">
+    </div>
+
+    <div class="mb-3">
+        <label>Y2</label>
+        <input type="text" [(ngModel)]="y2" class="form-control">
+    </div>
+
+    <button (click)="calcular()" type="button" class="btn btn-primary">Calcular</button>
+</div>
+
+<div class="col-6">
+    <h3>Distancia: {{resultado}}</h3>
+</div>
