@@ -1,0 +1,33 @@
+<div class="col-6">
+
+    <div class="mb-3">
+        <label>Figura</label>
+        <select [(ngModel)]="figura" class="form-control">
+            <option value="">Seleccione una figura</option>
+            <option value="Rectangulo">Rectángulo</option>
+            <option value="Cuadrado">Cuadrado</option>
+            <option value="Triangulo">Triángulo</option>
+            <option value="Circulo">Círculo</option>
+            <option value="Pentagono">Pentágono</option>
+        </select>
+    </div>
+
+    <div class="mb-3">
+        <label>Valor 1</label>
+        <input type="text" [(ngModel)]="valor1" class="form-control">
+    </div>
+
+    <div class="mb-3">
+        <label>Valor 2</label>
+        <input type="text" [(ngModel)]="valor2" class="form-control">
+    </div>
+
+    <button (click)="calcular()" type="button" class="btn btn-primary">
+        Calcular
+    </button>
+
+</div>
+
+<div class="col-6">
+    <h3>Resultado: {{resultado}}</h3>
+</div>
