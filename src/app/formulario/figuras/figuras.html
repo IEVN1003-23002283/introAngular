@@ -2,14 +2,34 @@
 
     <div class="mb-3">
         <label>Figura</label>
-        <select [(ngModel)]="figura" class="form-control">
-            <option value="">Seleccione una figura</option>
-            <option value="Rectangulo">Rectángulo</option>
-            <option value="Cuadrado">Cuadrado</option>
-            <option value="Triangulo">Triángulo</option>
-            <option value="Circulo">Círculo</option>
-            <option value="Pentagono">Pentágono</option>
-        </select>
+      <div class="mb-3">
+    <label>Figura:</label>
+
+    <div>
+        <input type="radio" name="figura" value="Rectangulo" [(ngModel)]="figura">
+        Rectángulo
+    </div>
+
+    <div>
+        <input type="radio" name="figura" value="Cuadrado" [(ngModel)]="figura">
+        Cuadrado
+    </div>
+
+    <div>
+        <input type="radio" name="figura" value="Triangulo" [(ngModel)]="figura">
+        Triángulo
+    </div>
+
+    <div>
+        <input type="radio" name="figura" value="Circulo" [(ngModel)]="figura">
+        Círculo
+    </div>
+
+    <div>
+        <input type="radio" name="figura" value="Pentagono" [(ngModel)]="figura">
+        Pentágono
+    </div>
+</div>
     </div>
 
     <div class="mb-3">
