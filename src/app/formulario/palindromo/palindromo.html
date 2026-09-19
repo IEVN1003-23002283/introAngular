@@ -1,0 +1,18 @@
+<div class="col-6">
+
+    <div class="mb-3">
+        <label>Escribe una frase</label>
+        <input type="text" [(ngModel)]="frase" class="form-control">
+    </div>
+
+   <button (click)="calcular()" type="button" class="btn btn-primary">
+    Analizar
+</button>
+
+</div>
+
+<div class="col-6">
+    <h3>Vocales: {{vocales}}</h3>
+    <h3>Consonantes: {{consonantes}}</h3>
+    <h3>{{palindromo}}</h3>
+</div>

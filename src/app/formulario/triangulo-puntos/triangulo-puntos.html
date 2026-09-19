@@ -1,0 +1,62 @@
+<div class="col-6">
+
+    <h3>Punto A</h3>
+
+    <div class="mb-3">
+        <label>X1</label>
+        <input type="text" [(ngModel)]="x1" class="form-control">
+    </div>
+
+    <div class="mb-3">
+        <label>Y1</label>
+        <input type="text" [(ngModel)]="y1" class="form-control">
+    </div>
+
+
+    <h3>Punto B</h3>
+
+    <div class="mb-3">
+        <label>X2</label>
+        <input type="text" [(ngModel)]="x2" class="form-control">
+    </div>
+
+    <div class="mb-3">
+        <label>Y2</label>
+        <input type="text" [(ngModel)]="y2" class="form-control">
+    </div>
+
+
+    <h3>Punto C</h3>
+
+    <div class="mb-3">
+        <label>X3</label>
+        <input type="text" [(ngModel)]="x3" class="form-control">
+    </div>
+
+    <div class="mb-3">
+        <label>Y3</label>
+        <input type="text" [(ngModel)]="y3" class="form-control">
+    </div>
+
+    <button (click)="calcular()" type="button" class="btn btn-primary">
+        Analizar puntos
+    </button>
+
+</div>
+
+
+<div class="col-6">
+
+    <h3>Resultado</h3>
+
+    <p>Punto A: ({{x1}}, {{y1}})</p>
+    <p>Punto B: ({{x2}}, {{y2}})</p>
+    <p>Punto C: ({{x3}}, {{y3}})</p>
+
+    <h3>{{resultado}}</h3>
+
+    <h3 *ngIf="area > 0">
+        Área: {{area}} unidades cuadradas
+    </h3>
+
+</div>
